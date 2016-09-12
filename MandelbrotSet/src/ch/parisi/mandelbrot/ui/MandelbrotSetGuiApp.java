@@ -23,17 +23,18 @@ import javafx.stage.Stage;
  * f(2) = 2^2 + 2 = 6 f(6) = 6^2 + 2 = 36 etc. etc.
  * 
  * starting point: 
- * f(0) = 0^2 + c^2
- * f(0) = c^2
+ * f(0) = 0^2 + c
+ * f(0) = c
  * 
- * f(1) = (c^2)^2 + c
+ * f(1) = c^2 + c
  * 
  * c = a + bi
  * f(x) = x^2 + (a + bi)
  * f(0) = a + bi
  * f(1) = (a + bi)^2 + (a + bi)
  * f(1) = (a + bi) * (a + bi) + (a + bi)
- * f(1) = a^2 + 2abi - b + (a + bi)
+ * f(1) = a^2 + 2abi - (b^2*i^2) + (a + bi)
+ * f(1) = a^2 - b^2 + 2abi + (a + bi) 
  * 
  * M-SET is the Set of all numbers that DO NOT grow exponentially in the
  * function x^2 + c. All these numbers are within r = 2.
